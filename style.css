@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: #f7f7f7;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236b5988' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     font-family: 'Open Sans', sans-serif;
 }
@@ -36,11 +36,11 @@ header .logo{
 }
 
 header .logo h1{
-    color: #ffffff;
+    color: #000000;
 }
 
 header .logo p{
-    color: #9B9B9B;
+    color: #5a5959;
 }
 
 header .logo img{
@@ -84,7 +84,7 @@ header .categories a{
 } 
 
 header .categories a.active{
-    color: rgb(255, 204, 0);
+    color: rgb(0, 0, 0);
     font-size: 25px;
 }
 
@@ -232,11 +232,11 @@ footer .creado-por {
     margin: 40px 0px 100px 0px;
     text-align: center;
     font-size: 25px;
-    color: #c13584;
+    color: #ff02d5;
 }
 footer .creado-por a{
     font-size: 30px;
-    color: #fff;
+    color: #000000;
 }
 
 footer .creado-por a:hover{

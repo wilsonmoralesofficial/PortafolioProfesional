@@ -3,6 +3,8 @@ const grid = new Muuri('.grid',{
         rounding: false 
     }
 });
+
+  
 // Agregamos los listeners de los enlaces para filtrar por categoria.
 window.addEventListener('load', () => {
     grid.refreshItems().layout();     
@@ -22,14 +24,6 @@ window.addEventListener('load', () => {
         })
     }); 
 
- // Agregamos los listeners para la barra de busqueda
-
-    // document.querySelector('#search-bar').addEventListener('input',(evento) => {
-    //     const busqueda = evento.target.value;  
-    //     grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda))
-    // });
-
-    //Agragaremos un listener para las imagenes
     
     const overlay = document.getElementById('overlay');
     document.querySelectorAll('.grid .item img').forEach((elemento) =>{
@@ -44,14 +38,5 @@ window.addEventListener('load', () => {
 
     });
 
-    //Eventlistener del boton de cerrar 
-    document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
-        overlay.classList.remove('activo')
-    });
-
-    //EventListener del overlay
-    overlay.addEventListener('click', (evento) => {
-        // overlay.classList.remove('activo')
-        evento.target.id === 'overlay' ? overlay.classList.remove('activo') : "";
-    });
 });
+
